@@ -1,4 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Define languages to make sure linguist records the files in stats
+*.lua linguist-language=Lua
+*.md linguist-language=Markdown
+*.ts linguist-language=Typescript
+*.d.ts linguist-language=Typescript
+# Include/Exclude files from stats
 dist/* linguist-detectable
 tests/* linguist-documentation
