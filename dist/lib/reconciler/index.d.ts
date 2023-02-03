@@ -1,0 +1,31 @@
+import { Node } from "../../types";
+import Renderer from "../Renderer";
+import Hooks from "./Hooks";
+export default class Reconciler {
+    private currentVirtualRoot;
+    private wipVirtualRoot;
+    private deletions;
+    private deferredEffects;
+    private nextUnitOfWork;
+    hooks: Hooks;
+    reconciling: boolean;
+    committing: boolean;
+    shouldReconcile: boolean;
+    constructor();
+    private updateElement;
+    private createElement;
+    private reconcileChildren;
+    private performUnitOfWork;
+    private updateHostComponent;
+    private updateExoticComponent;
+    private updateFunctionalComponent;
+    private performWork;
+    private getComponentNameFromElement;
+    private getComponentNameFromFibre;
+    private commitRoot;
+    private commitWork;
+    private commitDeletion;
+    private beginWork;
+    reconcile(element: Node, renderer: Renderer): void;
+    update(): void;
+}

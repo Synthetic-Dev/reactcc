@@ -1,0 +1,38 @@
+{
+  "name": "@ccts/reactcc",
+  "version": "0.1.0",
+  "description": "A react-like library for building interfaces in Computercraft",
+  "main": "./dist/index",
+  "types": "./dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tstl",
+    "dev": "tstl --watch"
+  },
+  "keywords": [
+    "react",
+    "reactcc",
+    "cc-react",
+    "computer",
+    "craft",
+    "computercraft",
+    "cc",
+    "tweaked"
+  ],
+  "author": "SyntheticDev",
+  "license": "MIT",
+  "devDependencies": {
+    "@ccts/cc-types": "^1.0.0",
+    "@ccts/craftos-types": "^1.1.4",
+    "@ccts/events": "^1.0.8",
+    "@jackmacwindows/lua-types": "^2.13.1",
+    "@jackmacwindows/typescript-to-lua": "^1.12.0"
+  },
+  "dependencies": {
+    "@ccts/blbfor": "^1.0.4",
+    "@ccts/regions": "^1.0.1",
+    "@ccts/vectors": "^1.0.3"
+  }
+}

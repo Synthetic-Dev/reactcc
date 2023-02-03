@@ -1,0 +1,34 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Synthetic-Dev/TypeScriptToLua/master/tsconfig-schema.json",
+	"compilerOptions": {
+		"target": "ESNext",
+		"lib": ["ESNext"],
+		"moduleResolution": "node",
+		"strict": false,
+		"jsx": "react",
+		"jsxFactory": "ReactCC.createElement",
+		"jsxFragmentFactory": "ReactCC.Fragment",
+		"outDir": "out/bundle",
+		"types": [
+			"@jackmacwindows/lua-types/cc",
+			"@ccts/craftos-types",
+			"@ccts/cc-types"
+		]
+	},
+	"tstl": {
+		"luaTarget": "CC",
+		"luaLibImport": "require",
+		"luaBundle": "main.lua",
+		"luaBundleEntry": "src/main.ts",
+		"sourceMapTraceback": false
+	},
+	"include": [
+		"src",
+		"node_modules/@ccts/program",
+		"node_modules/@ccts/vectors",
+		"node_modules/@ccts/events",
+		"node_modules/@ccts/reactcc/dist",
+		"node_modules/@ccts/reactcc/node_modules/@ccts/regions",
+		"node_modules/@ccts/reactcc/node_modules/@ccts/vectors"
+	]
+}
