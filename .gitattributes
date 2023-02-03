@@ -6,5 +6,6 @@
 *.ts linguist-language=Typescript
 *.d.ts linguist-language=Typescript
 # Include/Exclude files from stats
-dist/* linguist-detectable
+docs/* linguist-vendored=false
+dist/* linguist-detectable linguist-vendored=false
 tests/* linguist-documentation
